@@ -85,3 +85,5 @@ class LoginViewTest(TestCase):
         mock_auth.authenticate.return_value = None
         self.client.get('/accounts/login?token=abcd123')
         self.assertEqual(mock_auth.login.called, False)
+
+
